@@ -1,0 +1,19 @@
+var weatherAPIUrlBase = 'https://publicdata-weather.firebaseio.com/';
+var key = 'newyork';
+var label = 'New York, NY';
+var url = weatherAPIUrlBase + key + '.json';
+
+caches.match(url).then(function (response) {
+        if (response) {
+          response.json().then(function (response) {
+            // Only update if the XHR is still pending, otherwise the XHR was already returned
+            if (true) {
+              console.log('update from cache')
+              json.key = key;
+              json.label = label;
+              //console.log(response)
+			  console.log('json',json)
+            }
+          });
+        }
+      });
