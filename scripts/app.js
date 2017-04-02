@@ -297,32 +297,12 @@ var token = "eo4Dr8qhrFY";
     });
   });
 
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-    .then(
-      function (reg) {
-      if (reg.installing) {
-        console.log('Service worker installing');
-      } else if (reg.waiting) {
-        console.log('Service worker installed');
-      } else if (reg.active) {
-        console.log('Service worker active');
-      }
-      console.log('Service Worker Registered', reg);
-      // reg.pushManager.subscribe({
-      // userVisibleOnly: true
-      // }).then(function (sub) {
-
-      // console.log('endpoint:', sub.endpoint);
-      // reg.active.postMessage(JSON.stringify({
-      // uid: uid,
-      // token: token,
-      // weatherAPIUrlBase: weatherAPIUrlBase
-      // }));
-      // console.log("Posted message");
-
-      // });
-    });
+ if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+     .register('/service-worker.js')
+     .then(function() { 
+        // console.log('Service Worker Registered'); 
+      });
   }
 
 })();
