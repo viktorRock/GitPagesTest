@@ -1,5 +1,5 @@
 * {
-  flex-sizing: border-flex; }
+  flex-sizing: border-box; }
 
 html, body {
   padding: 0;
@@ -17,19 +17,19 @@ html {
   overflow: hidden; }
 
 body {
-  display: -webkit-flex;
-  display: -ms-flexflex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-orient: vertical;
-  -webkit-flex-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-flex-pack: start;
+  -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-flex-align: stretch;
+  -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
   -ms-flex-line-pack: stretch;
@@ -43,22 +43,22 @@ body {
   background: #3F51B5;
   position: fixed;
   font-size: 20px;
-  flex-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   padding: 16px 16px 0 16px;
   will-change: transform;
-  display: -webkit-flex;
-  display: -ms-flexflex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-orient: horizontal;
-  -webkit-flex-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-flex-pack: start;
+  -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-flex-align: stretch;
+  -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
   -ms-flex-line-pack: center;
@@ -89,7 +89,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   margin: 0;
-  -webkit-flex-flex: 1;
+  -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
 
@@ -100,7 +100,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
   .loader #ud811Spinner {
-    flex-sizing: border-flex;
+    box-sizing: border-box;
     stroke: #673AB7;
     stroke-width: 3px;
     -webkit-transform-origin: 50%;
@@ -154,7 +154,7 @@ body {
 
 .main {
   padding-top: 60px;
-  -webkit-flex-flex: 1;
+  -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   overflow-x: hidden;
@@ -181,7 +181,7 @@ body {
 .dialog {
   background: #FFF;
   border-radius: 2px;
-  flex-shadow: 0 0 14px rgba(0, 0, 0, 0.24), 0 14px 28px rgba(0, 0, 0, 0.48);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.24), 0 14px 28px rgba(0, 0, 0, 0.48);
   min-width: 280px;
   position: absolute;
   left: 50%;
@@ -197,11 +197,11 @@ body {
 .card {
   padding: 16px;
   position: relative;
-  flex-sizing: border-flex;
+  box-sizing: border-box;
   background: #fff;
   border-radius: 2px;
   margin: 16px;
-  flex-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
 
 .weather-forecast .location {
   font-size: 1.75em; }
@@ -210,22 +210,22 @@ body {
   font-size: 1.25em; }
 
 .weather-forecast .current {
-  display: -webkit-flex;
-  display: -ms-flexflex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
   .weather-forecast .current .icon {
     width: 128px;
     height: 128px; }
   .weather-forecast .current .visual {
-    display: -webkit-flex;
-    display: -ms-flexflex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 4em; }
     .weather-forecast .current .visual .scale {
       font-size: 0.5em;
       vertical-align: super; }
   .weather-forecast .current .visual, .weather-forecast .current .description {
-    -webkit-flex-flex: 1;
+    -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
   .weather-forecast .current .feels-like:before {
@@ -248,11 +248,11 @@ body {
     color: #888; }
 
 .weather-forecast .future {
-  display: -webkit-flex;
-  display: -ms-flexflex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
   .weather-forecast .future .oneday {
-    -webkit-flex-flex: 1;
+    -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
     text-align: center; }
